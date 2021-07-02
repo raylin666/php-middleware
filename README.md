@@ -26,7 +26,8 @@ use Raylin666\Http\Request;
 
 class ChlidMiddleware extends Middleware
 {
-    public function handler(ServerRequestInterface $request, DelegateInterface $next){
+    public function handler(ServerRequestInterface $request, DelegateInterface $next)
+    {
         // TODO: Implement handle() method.
         dump($request);
         // 将控制权委托给下一个中间件
@@ -40,7 +41,8 @@ class ChlidMiddleware extends Middleware
 
 class Chlid1Middleware extends Middleware
 {
-    public function handler(ServerRequestInterface $request, DelegateInterface $next){
+    public function handler(ServerRequestInterface $request, DelegateInterface $next)
+    {
         // TODO: Implement handle() method.
         echo 2;
         return $next->process($request);
@@ -49,7 +51,8 @@ class Chlid1Middleware extends Middleware
 
 class Chlid2Middleware extends Middleware
 {
-    public function handler(ServerRequestInterface $request, DelegateInterface $next){
+    public function handler(ServerRequestInterface $request, DelegateInterface $next)
+    {
         // TODO: Implement handle() method.
         echo 3;
     }

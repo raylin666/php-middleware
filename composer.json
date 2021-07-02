@@ -1,0 +1,34 @@
+{
+    "name": "raylin666/middleware",
+    "description": "Web MiddleWare",
+    "keywords": [
+        "middleware",
+        "framework",
+        "web",
+        "http"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "raylin666",
+            "email": "1099013371@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "raylin666/http": "^1.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Raylin666\\Middleware\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {}
+    },
+    "extra": {},
+    "packages": {},
+    "packages-dev": {}
+}
